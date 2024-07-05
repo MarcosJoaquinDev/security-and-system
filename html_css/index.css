@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+body {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  color: whitesmoke;
+  background-color: black;
+}
+.header{
+    padding: 30px;
+    margin: 30px 0 30px 0;
+}
+.header_cont{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+}
+.header_cont img{
+    border-radius: 50%;
+    width: 400px;
+}
+.header_cont h1{
+    font-size: 48px;
+    text-align: center;
+}
+@media (max-width: 870px) {
+    .header_cont{
+        flex-direction: column;
+    }
+  }
+
+.description{
+    padding: 60px 30px 60px 30px;
+    background-color: #080808;
+}
+.description_container{
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+@media (max-width: 870px) {
+    .description_container{
+        flex-direction: column;
+        max-width:600px ;
+    }
+  }
+.description_container img{
+    width: 200px;
+}
+.description_container p{
+    text-align: justify;
+}
+
+.hobies{
+    margin: 0;
+    padding: 30px;
+    background-color:#656565;
+    color: aliceblue;
+}
+.hobbies_title{
+    font-size: 36px;
+    text-align: center;
+}
+.hobbies_items{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    text-align: center;
+}
+@media (max-width: 970px) {
+    .hobbies_items{
+        flex-direction: column;
+        align-items: center;
+        gap:5px;
+    }
+    .hobbies_item{
+        max-width: 300px;
+    }
+  }
+
+.hobbies_item{
+    padding: 10px;
+    list-style: none;
+}
+.hobbies_img{
+    width: 130px;
+    color: aliceblue;
+}
+.hobbies_item_title{
+    font-size: 24px;
+}
+.hobbies_item_description{
+    text-align: justify;
+}
+
+.contact{
+    padding: 30px;
+    background-color: #080808;
+    color: aliceblue;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+@media (max-width: 970px) {
+    .contact{
+        flex-direction: column;
+        gap:5px;
+        align-items: center;
+    }
+  }
+.contact_title{
+    font-size: 32px;
+}
+.contact_form{
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:20px;
+}
+.contact_form_detail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact_form_detail input{
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.contact_form_detail textarea{
+    background-color: transparent;
+}
